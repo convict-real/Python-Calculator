@@ -3,7 +3,7 @@ import math, random, string
 def main():
     print("Hello. Input a response (ex: exit).")
     print("Choices: [1] Equation [2] Temperature [3] Unit Conversion [4] Shape Area/Volume [5] String Generation [6] Coordinate Distance")
-    
+
     response = input("Reponse: ")
 
     if response.lower() in ["quit", "exit"]:
@@ -24,12 +24,12 @@ def main():
         if not calculation_type.isdigit():
             print("Type must be a number.")
             return
-        
+
         calculation_type = int(calculation_type)
 
         if calculation_type == 1:
             equation = input("Equation: ")
-            
+
             if equation.lower() in ["quit", "exit"]:
                 print("Goodbye!")
                 return
@@ -80,7 +80,7 @@ def main():
                 print(f"Result: {result}")
         elif calculation_type == 2:
             equation = input("Equation: ")
-            
+
             if equation.lower() in ["quit", "exit"]:
                 print("Goodbye!")
                 return
@@ -89,7 +89,7 @@ def main():
                 equation = equation.replace("sqrt", "math.sqrt")
 
                 result = eval(equation)
-                
+
                 print(f"Result: {result}")
     elif response == 2:
         degrees = input("Degrees: ")

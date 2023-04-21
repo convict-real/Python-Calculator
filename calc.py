@@ -318,20 +318,20 @@ def quit():
 
 def main():
     print("Hello. Input a response (ex: exit).")
-    print("Choices: [1] Equation [2] Temperature [3] Unit Conversion [4] Shape Area/Volume [5] String Generation [6] Coordinate Distance")
+    print("Choices: [1] Equation [2] Temperature [3] Unit Conversion [4] Shape Area/Volume [5] String Generation [6] Coordinate Distance [7] Exit")
 
     response = input("Reponse: ")
 
-    if response.lower() in ["quit", "exit"]:
+    if response.lower() in [7, "quit", "exit"]:
         quit()
-    else:
-        if not response.isdigit():
-            print("Reponse must be a number.")
-            return
+
+    if not response.isdigit():
+        print("Reponse must be a number.")
+        return
 
     response = int(response)
 
-    if response not in [1, 2, 3, 4, 5, 6]:
+    if response not in [1, 2, 3, 4, 5, 6, 7]:
         print("Invalid response.")
         return
 

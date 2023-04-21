@@ -2,5 +2,6 @@
 
 A sophisticated calculator for many different usages, written in Python.
 
-### Features
+### Information
 * Written using VSCode and Neovim
+* Written with Python version 3.11
